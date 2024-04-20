@@ -72,10 +72,3 @@ class Connect4:
             print('now moves:', self.who_moves)
             print('possible drops:', self.possible_drops())
 
-    def copy(self):
-        copied_game = Connect4(width=self.width, height=self.height)
-        copied_game.board = [row[:] for row in self.board]
-        copied_game.who_moves = self.who_moves
-        copied_game.game_over = self.game_over
-        copied_game.wins = self.wins
-        return copied_game
