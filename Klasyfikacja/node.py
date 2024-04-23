@@ -15,7 +15,6 @@ class Node:
         best_gain = -np.inf
         best_idx = 0
 
-        # TODO find position of best data split
         total_samples = len(y)
         for i in possible_splits:
             if i == 0:
